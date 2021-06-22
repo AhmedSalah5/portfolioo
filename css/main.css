@@ -18,3 +18,67 @@ header::before{
     background-image: url(../images/bgs/bg1.jpg);
     background-size: cover;
 }
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+.logo img{
+    width: 100%;
+    border-radius: 50%;
+}
+.menu-toggler{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 40px;
+    right:40px;
+    cursor: pointer;
+}
+.menu-toggler,.opened{
+    transition: all 0.4s;
+}
+.menu-toggler div{
+    height: 2px;
+    background: #fff;
+}
+.menu-toggler.opened div:nth-child(1){
+    transform: rotate(46deg) translate(11px, 8px);
+}
+.menu-toggler.opened div:nth-child(2){
+    transform:translateX(30px);
+    opacity: 0;
+}
+.menu-toggler.opened div:nth-child(3){
+    transform: rotate(135deg) translate(-10px, 10px);
+}
+
+.main-menu{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    list-style: none;
+    padding: 20px;
+    display: none;
+}
+.main-menu li{
+    display: inline-block;
+    margin: 10px;
+}
+.main-menu li a{
+    padding: 6px 15px;
+    text-decoration: none;
+}
+@media(max-width:767px){
+    .main-menu li{display: block;}
+}
