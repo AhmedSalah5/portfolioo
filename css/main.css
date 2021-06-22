@@ -22,8 +22,8 @@ header::before{
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border: 2px solid #fff;
     border-radius: 50%;
     padding: 5px;
