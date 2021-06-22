@@ -3,7 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+.totop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #f18219;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+/*  Start Header  */
 header{
     height: 70vh;
     background: rgba(0,0,0,0.8);
@@ -27,6 +42,7 @@ header::before{
     border: 2px solid #fff;
     border-radius: 50%;
     padding: 5px;
+    z-index: 999;
 }
 .logo img{
     width: 100%;
@@ -42,6 +58,7 @@ header::before{
     top: 40px;
     right:40px;
     cursor: pointer;
+    z-index: 999;
 }
 .menu-toggler,.opened{
     transition: all 0.4s;
@@ -63,7 +80,7 @@ header::before{
 
 .main-menu{
     position: absolute;
-    top: 100px;
+    top: 80px;
     left: 50%;
     transform: translateX(-50%);
     border:2px solid #fff;
@@ -71,6 +88,8 @@ header::before{
     list-style: none;
     padding: 20px;
     display: none;
+    z-index: 999;
+    background: rgba(0,0,0,0.98);
 }
 .main-menu li{
     display: inline-block;
@@ -79,7 +98,25 @@ header::before{
 .main-menu li a{
     padding: 6px 15px;
     text-decoration: none;
+    color: #dedede;
+    letter-spacing: 3px;
 }
 @media(max-width:767px){
     .main-menu li{display: block;}
+}
+.intro-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #d1d1d1;
+}
+.intro-text h1{
+    margin-bottom: 15px;
+}
+/*--- General in sections ---*/
+section{
+    height: 100vh;
+    padding-top: 50px;
 }
