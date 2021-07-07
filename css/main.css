@@ -20,7 +20,7 @@ html{
 }
 /*  Start Header  */
 header{
-    height: 70vh;
+    height: 100vh;
     background: rgba(0,0,0,0.8);
     position: relative;
 }
